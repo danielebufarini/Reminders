@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/taskTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="@string/taskDetailTitle"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/dueDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/taskTitle"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/calendar_view_month"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/taskDetailSetduedate" />
+
+    <TextView
+        android:id="@+id/alarmDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dueDate"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/clock_red"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/taskDetailRemindme" />
+
+    <Spinner
+        android:id="@+id/reminderInterval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/taskTitle"
+        android:layout_below="@id/dueDate"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@id/alarmDateTime"
+        android:entries="@array/taskDetailRepeatReminder"
+        android:paddingTop="16dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/priorityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reminderInterval"
+        android:layout_alignRight="@id/alarmDateTime"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="8dp"
+        android:paddingRight="10sp"
+        android:paddingTop="10sp"
+        android:gravity="center_vertical"
+        android:text="@string/taskDetailPriority" />
+
+    <Spinner
+        android:id="@+id/priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/taskTitle"
+        android:layout_below="@id/reminderInterval"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@id/alarmDateTime"
+        android:entries="@array/taskDetailRepeatReminder"
+        android:paddingTop="16dp"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/priority"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/taskDetailNote"
+        android:inputType="textMultiLine"
+        android:maxLines="10"
+        android:textSize="14sp" />
+
+</RelativeLayout>

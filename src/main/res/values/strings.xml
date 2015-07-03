@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Reminders</string>
+    <string name="app_version">1.6.5</string>
+    <string name="search_hint">Search tasks</string>
+
+    <string name="menu_item_about">About Reminders</string>
+    <string name="menu_item_calendar_view">Switch to calendar view</string>
+    <string name="menu_item_agenda_view">Switch to agenda view</string>
+    
+    <string name="about_description1">to-do list manager</string>
+    <string name="about_description2">hand-crafted with love by Daniele Bufarini</string>
+    <string name="about_description3">&#169; 2013-2014 all rights reserved</string>
+    
+    <string name="intent_action_alarm">com.bufarini.ALARM</string>
+    
+    <string name="duedatepicker_date">Date</string>
+    <string name="duedatepicker_time">Time</string>
+    
+    <string name="saving_tasks">Saving tasks</string>
+    <string name="tasks_saved">Tasks saved</string>
+
+    <string name="about_collaboration">About collaboration</string>
+    <string name="dont_show_again">Don\&apos;t show this dialog anymore</string>
+    <string name="about_collaboration_html_path">file:///android_asset/collaboration2.html</string>
+    <string name="delete_after_importing">Delete selected emails after importing them</string>
+    <string name="email_import_dialog">Select emails you wish to import</string>
+
+    <string name="intent_import_select_list">Select an existing list</string>
+    <string name="intent_import_create_list">or create a new one</string>
+    
+    <string name="no_network_connection">No network connection</string>
+    
+    <string name="addItemHint">Insert a new item here</string>
+	<string name="addItemButton">add task</string>
+	<string name="addTaskHint">Add a new task</string>
+	<string name="newTaskList">new list</string>
+	<string name="syncWithGTaks">Sync with Google Tasks</string>
+	<string name="enableCollaboration">Enable collaboration</string>
+	<string name="newList">New list</string>
+	<string name="syncing_text_dialog">Syncing</string>
+	<string name="speakNow">Speak now</string>
+	<string name="renameTo">Rename to&#8230;</string>
+	<string name="shareWith">Enter an email address&#8230;</string>
+    <string name="invalidEmailAddress">Invalid email address </string>
+	<string name="listShared">List shared with</string>
+	<string name="delete">Delete</string>
+	<string name="rename">Rename</string>
+    <string name="merge">Merge</string>
+    <string name="share">Share</string>
+	<string name="sendByEmail">Send</string>
+	<string name="cancel">Cancel</string>
+	<string name="deleteList">Delete ?</string>
+    <string name="asksForNewListName">New list name</string>
+	<string name="deleteListMessage">Do you really want to delete list \"%s\"?</string>
+	<string name="deleteSelectedists">Do you really want to delete selected lists ?</string>
+	<string-array name="listOptions">
+        <item>Rename&#8230;</item>
+        <item>Delete&#8230;</item>
+    </string-array>
+    <string name="taskDetailTitle">Title</string>
+    <string name="taskDetailNote">Note</string>
+    <string name="taskDetailSetduedate">Set due date</string>
+    <string name="taskDetailRemindme">Remind me</string>
+    <string name="taskDetailPriority">Priority</string>
+    <string name="taskDetailDialogTitle">Task detail</string>
+    <string name="taskDetailDialogSave">Save</string>
+    <string name="taskDetailDialogCancel">Remove</string>
+    <string name="taskDetailDone">Done</string>
+    <string name="alarmPopupSnooze">Snooze</string>
+    <string name="alarmPopupTitle1">Reminder</string>
+    <string name="alarmPopupTitle2">due</string>
+    <string-array name="taskDetailRepeatReminder">
+        <item>Once</item>
+        <item>Every Minute</item>
+        <item>Every Hour</item>
+        <item>Every Day</item>
+        <item>Every Week</item>
+        <item>Every 2 Weeks</item>
+        <item>Every Month</item>
+        <item>Every Year</item>
+    </string-array>
+    <string name="undo">Undo</string>
+    <string name="hideCompleted">Hide completed</string>
+    <string name="sortByDate">Sort by due date</string>
+    
+    <!-- Alarm confirmation toast: Describes how long from now until
+         alarm fires -->
+    <string-array name="alarm_set">
+        <item>Reminder set for less than 1 minute from now.</item>
+        <item>Reminder set for <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> from now.</item>
+        <item>Reminder set for <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> from now.</item>
+        <item>Reminder set for <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> and <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> from now.</item>
+        <item>Reminder set for <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> from now.</item>
+        <item>Reminder set for <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> and <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> from now.</item>
+        <item>Reminder set for <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> and <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> from now.</item>
+        <item>Reminder set for <xliff:g id="DAYS" example="2 days">%1$s</xliff:g>, <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g>, and <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> from now.</item>
+    </string-array>
+    <!-- Alarm confirmation toast: singular day -->
+    <string name="day">"1 day"</string>
+
+    <!-- Alarm confirmation toast: plural days -->
+    <string name="days">"<xliff:g id="days">%s</xliff:g> days"</string>
+
+    <!-- Alarm confirmation toast: singular hour -->
+    <string name="hour">1 hour</string>
+
+    <!-- Alarm confirmation toast: plural hours -->
+    <string name="hours"><xliff:g id="hours">%s</xliff:g> hours</string>
+
+    <!-- Alarm confirmation toast: singular minute  -->
+    <string name="minute">"1 minute"</string>
+
+    <!-- Alarm confirmation toast: plural minutes  -->
+    <string name="minutes">"<xliff:g id="minutes">%s</xliff:g> minutes"</string>
+    <string name="saveAsList">Save as new list</string>
+    <string name="no_tasks_found">No tasks found!</string>
+    <string name="menu_item_premium">Upgrade to premium</string>
+
+</resources>

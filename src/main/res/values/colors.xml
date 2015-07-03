@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="notepad_paper">#EEF8E0A0</color>
+    <color name="notepad_lines">#FF0000FF</color>
+    <color name="notepad_margin">#90FF0000</color>
+    <color name="notepad_text">#AA0000FF</color>
+    <color name="red_sync_button">#FF4444</color>
+    <color name="grey_sync_button">#333333</color>
+    <color name="list_item_selected">#33B5E5</color>
+    <color name="list_item_deselected">#E3E3E2</color>
+    <color name="account_name">#33B5E5</color>
+    <color name="item_background">#EDEDEC</color>
+</resources>

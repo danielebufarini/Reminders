@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Switch
+        android:id="@+id/gtaskSync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/syncWithGTaks"
+        android:textColor="#E3E3E2"
+        android:textSize="14sp" />
+
+    <Switch
+        android:id="@+id/collaboration_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gtaskSync"
+        android:layout_marginBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/enableCollaboration"
+        android:textColor="#E3E3E2"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <Spinner
+        android:id="@+id/accountName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@id/collaboration_switch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp" />
+
+    <ImageButton
+        android:id="@+id/syncButton"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@id/accountName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/red_sync_button"
+        android:scaleType="centerInside"
+        android:src="@drawable/navigation_refresh" />
+
+    <ImageButton
+        android:id="@+id/addListButton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/addItemButton"
+        android:scaleType="fitCenter"
+        android:src="@drawable/plus_add" />
+
+    <EditText
+        android:id="@+id/newListText"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toLeftOf="@id/addListButton"
+        android:inputType="text"
+        android:textColor="#E3E3E2" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/addListButton"
+        android:layout_below="@id/syncButton"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#E3E3E2"
+        android:choiceMode="singleChoice" />
+
+</RelativeLayout>

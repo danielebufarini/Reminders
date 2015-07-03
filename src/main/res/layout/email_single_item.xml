@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/item_background"
+    android:padding="2dp" >
+
+    <TextView
+        android:id="@+id/subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="8dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxLines="1"
+        android:paddingLeft="8dp"
+        android:scrollHorizontally="true"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/email_to_import"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/email_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subject"
+        android:maxLines="1"
+        android:paddingLeft="8dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/sent_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_from"
+        android:maxLines="1"
+        android:paddingLeft="8dp"
+        android:textSize="12sp" />
+
+</RelativeLayout>

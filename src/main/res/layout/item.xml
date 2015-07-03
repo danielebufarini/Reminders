@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/item_background"
+    android:padding="8dp" >
+
+    <CheckBox
+        android:id="@+id/item_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_check"
+        android:paddingBottom="8dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="16sp" />
+
+    <com.bufarini.reminders.ui.DragGripView
+        android:id="@+id/drag_handle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:color="#2333" />
+
+    <com.bufarini.reminders.ui.DragGripView
+        android:id="@+id/no_handle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:color="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/dueDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/item"
+        android:layout_below="@id/item"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/item_priority"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/coloured_box"
+        android:layout_marginRight="8dp"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toLeftOf="@id/drag_handle"/>
+
+    <ImageView
+        android:id="@+id/recurring"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_below="@id/item"
+        android:layout_toLeftOf="@id/item_priority"
+        android:layout_alignWithParentIfMissing="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/recurring" />
+
+    <ImageView
+        android:id="@+id/reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_below="@id/item"
+        android:layout_toLeftOf="@id/recurring"
+        android:scaleType="fitCenter"
+        android:src="@drawable/clock_red" />
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/selectListLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/intent_import_select_list"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/listNewList"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/createListLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/listNewList"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/intent_import_create_list"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/taskLists"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/createListLabel"
+        android:layout_below="@id/selectListLabel"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:divider="#00FFFFFF"
+        android:dividerHeight="8dp"
+        android:paddingBottom="32dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" />
+
+</RelativeLayout>
